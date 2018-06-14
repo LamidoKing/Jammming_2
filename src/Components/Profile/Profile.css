@@ -1,0 +1,95 @@
+.Connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  .Connect-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 12rem;
+    margin-top: 0rem;
+    padding: .77rem 0rem;
+    border-radius: 54px;
+    background-color: #2ebd59;
+    text-align: center;
+    font-size: .83rem;
+    transition: background-color .25s;
+  }
+  
+  .Connect-button:hover {
+    background-color: #1ed760;
+  }
+  
+  .Disconnect-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: auto;
+    margin-top: 0rem;
+    padding: .77rem 0rem;
+    text-align: center;
+    font-size: .83rem;
+    transition: background-color .25s;
+  }
+    .Connect-button:hover {
+    background-color: #1ed760;
+  }
+  
+  .Profile-image {
+    display: none;
+    width: auto;
+    height: 3rem;
+    margin-bottom: .5rem;
+    border-radius: 1.5rem 1.5rem .5rem .5rem;
+    box-shadow: 0 1px 1px 1px #000000;
+  }
+  
+  .Profile-image:hover {
+    background-color: #1ed760;
+  }
+  
+  .Visible {
+    display: inline-block;
+  }
+  
+  /* Tooltip effect to help user disconnect from Spotify */
+  .tooltip {
+      position: relative;
+  }
+  
+  .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 200px;
+      background-color: red;
+      color: #fff;
+      text-align: center;
+      border-radius: 3px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      top: 95%;
+      left: 50%;
+      margin-left: -100px;
+  }
+  
+  disconnect .disconnecttext::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent red transparent;
+  }
+  
+  .disconnect:hover .disconnecttext {
+      visibility: visible;
+  }
